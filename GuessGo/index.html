@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" href="help.png" type="image/png" />
+  <title>Guess It Out Loud!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="particles" id="particles"></div>
+  
+  <div class="container" id="game-container">
+    <h1>Guess It Out Loud!</h1>
+    <h3>Speak a number between 1 and 100</h3>
+    
+    <div class="mic-container">
+      <button class="mic-btn" id="mic-btn">
+        <svg class="mic-icon" viewBox="0 0 24 24">
+          <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z" />
+        </svg>
+        <div class="ripple"></div>
+      </button>
+    </div>
+    
+    <div class="range-indicator">
+      <div class="range-progress" id="range-progress"></div>
+    </div>
+    <div class="range-labels">
+      <div>1</div>
+      <div>100</div>
+    </div>
+    
+    <div id="msg" class="msg" style="display: none;"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
